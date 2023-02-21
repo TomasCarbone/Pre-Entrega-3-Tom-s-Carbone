@@ -1,0 +1,13 @@
+
+{% load static %} 
+
+<p>Estamos buscando al comprador que busca el auto: {{auto}} </p>
+    {% if medicos %} 
+    <ul>
+        {% for comprador in compradores %}
+            <li>{{comprador.nombre}}</li>
+            <li>{{comprador.apellido}}</li>
+            <li>{{comprador.auto}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}

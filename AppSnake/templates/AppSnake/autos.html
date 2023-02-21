@@ -1,0 +1,12 @@
+{% extends "AppSnake/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<h1>
+    Aquí los compradores y vendedores veram el mercado
+    <body>
+        {% for auto in autos  %}
+        <li>{{auto}}</li>
+        {% endfor %}
+    </body>
+</h1>
+{% endblock %}

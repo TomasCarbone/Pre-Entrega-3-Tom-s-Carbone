@@ -1,0 +1,13 @@
+
+{% load static %} 
+
+<p>Estamos buscando al vendedor cuyo auto en oferta es: {{modelo}} </p>
+    {% if cientificos %} 
+    <ul>
+        {% for cientifico in cientificos %}
+            <li>{{vendedor.nombre}}</li>
+            <li>{{vendedor.apellido}}</li>
+            <li>{{vendedor.comision}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
